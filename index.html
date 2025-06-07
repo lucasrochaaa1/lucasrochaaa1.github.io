@@ -1,260 +1,43 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucas Rocha - Portfólio Profissional</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000000; /* fundo preto puro */
-      color: #ffffff; /* texto branco */
-      line-height: 1.6;
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid #007bff; /* azul vibrante */
-      object-fit: cover;
-      margin-bottom: 20px;
-      transition: border-color 0.3s ease;
-      box-shadow: 0 0 15px #007bffaa;
-    }
-    header img:hover {
-      border-color: #3399ff;
-      box-shadow: 0 0 25px #3399ffcc;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 5px;
-      color: #ffffff;
-      font-weight: 700;
-      text-shadow: 1px 1px 3px #000000aa;
-    }
-    header h2 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: #99ccff; /* azul claro */
-      margin-bottom: 15px;
-      font-style: italic;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #cccccc;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    section h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-bottom: 3px solid #007bff;
-      padding-bottom: 10px;
-      color: #3399ff;
-      font-weight: 700;
-      text-shadow: 1px 1px 3px #000000aa;
-    }
-    p {
-      margin-bottom: 20px;
-      font-size: 1.1rem;
-      color: #e6e6e6;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 15px;
-      font-size: 1.15rem;
-      padding-left: 30px;
-      position: relative;
-      color: #f0f0f0;
-      line-height: 1.5;
-      font-weight: 500;
-    }
-    ul li::before {
-      content: "▹";
-      position: absolute;
-      left: 0;
-      color: #007bff;
-      font-weight: bold;
-      font-size: 1.4rem;
-      line-height: 1;
-      top: 1px;
-      text-shadow: 0 0 4px #007bffaa;
-    }
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 15px;
-    }
-    .skill-item {
-      background-color: #121212;
-      padding: 10px 18px;
-      border-radius: 25px;
-      color: #007bff;
-      font-weight: 700;
-      font-size: 1.05rem;
-      box-shadow: 0 0 10px #007bff88;
-      user-select: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      cursor: default;
-    }
-    .skill-item:hover {
-      background-color: #007bff;
-      color: #000000;
-      box-shadow: 0 0 15px #3399ffcc;
-    }
-    .contact-links a {
-      color: #007bff;
-      text-decoration: none;
-      margin-right: 20px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-    .contact-links a:hover {
-      color: #3399ff;
-      text-decoration: underline;
-    }
-    /* Estilo para o botão baixar currículo */
-    .btn-download {
-      display: inline-block;
-      padding: 8px 18px;
-      background-color: #007bff;
-      color: #000000;
-      font-weight: 700;
-      border-radius: 25px;
-      box-shadow: 0 0 10px #007bff88;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      text-decoration: none;
-      margin-left: 10px;
-    }
-    .btn-download:hover {
-      background-color: #3399ff;
-      color: #fff;
-      box-shadow: 0 0 15px #3399ffcc;
-    }
-    footer {
-      text-align: center;
-      margin-top: 70px;
-      color: #666666;
-      font-size: 1rem;
-      user-select: none;
-    }
-    @media (max-width: 600px) {
-      body {
-        padding: 15px 10px;
-      }
-      header img {
-        width: 130px;
-        height: 130px;
-      }
-      header h1 {
-        font-size: 2.4rem;
-      }
-      section h3 {
-        font-size: 1.6rem;
-      }
-      ul li {
-        font-size: 1.05rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="lucas.jpg" alt="Foto de Lucas Rocha" />
-    <h1>Lucas Rocha da Silva</h1>
-    <h2>Engenheiro Cloud & Engenheiro de Dados | DevOps Junior</h2>
-    <p>São Gonçalo - RJ | Ipiranga | SENAI</p>
-  </header>
-
-  <section>
-    <h3>Quem sou eu?</h3>
-    <p>
-      Sou Engenheiro Cloud e Engenheiro de Dados com experiência prática em soluções de infraestrutura e pipelines de dados.
-      Atuo no desenvolvimento de automações e integrações na nuvem, principalmente em Azure, AWS e Google Cloud, com foco em eficiência e escalabilidade.
-    </p>
-    <p>
-      Minha paixão está em criar sistemas confiáveis que otimizem processos e entreguem valor real aos negócios, usando ferramentas como Azure Functions, Logic Apps, Databricks, Python, Spark e Power BI.
-    </p>
-    <p>
-      Estudo Análise e Desenvolvimento de Sistemas para ampliar minhas habilidades técnicas e estar sempre atualizado nas melhores práticas.
-    </p>
-  </section>
-
-  <section>
-    <h3>Experiência Profissional</h3>
-    <ul>
-      <li>
-        <strong>Dhata4</strong> – Engenharia de Dados e Cloud (2023 – Atual)<br/>
-        Desenvolvimento e manutenção de pipelines de dados, automação de processos em nuvem, e integração entre sistemas com foco em qualidade e performance.
-      </li>
-      <li>
-        <strong>Radix Engenharia</strong> – Suporte Técnico e Infraestrutura Cloud (2021 – 2023)<br/>
-        Atuação em monitoramento, suporte e configuração de ambientes cloud, garantindo alta disponibilidade e segurança das soluções.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Projetos</h3>
-    <ul>
-      <li><strong>Automação de Workflows na Azure:</strong> Criação de processos automatizados com Azure Functions e Logic Apps para melhorar a eficiência operacional.</li>
-      <li><strong>Pipelines de Dados com Databricks e Spark:</strong> Desenvolvimento de pipelines para processamento e transformação de grandes volumes de dados.</li>
-      <li><strong>Dashboards de BI:</strong> Construção de dashboards em Power BI para análise estratégica e tomada de decisões baseada em dados.</li>
-      <li><strong>Integração de Sistemas em Cloud:</strong> Projetos que integram diferentes serviços na AWS, Azure e Google Cloud para soluções completas.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Skills Técnicas</h3>
-    <div class="skills-list">
-      <span class="skill-item">Azure Functions</span>
-      <span class="skill-item">Logic Apps</span>
-      <span class="skill-item">Databricks</span>
-      <span class="skill-item">Python</span>
-      <span class="skill-item">Spark</span>
-      <span class="skill-item">Power BI</span>
-      <span class="skill-item">AWS</span>
-      <span class="skill-item">Azure</span>
-      <span class="skill-item">Google Cloud</span>
-      <span class="skill-item">Automação</span>
-      <span class="skill-item">DevOps</span>
+<section id="sobre" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Sobre Mim</h2>
+      <hr>
     </div>
-  </section>
+    <div class="about-content">
+      <p>
+        Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em <strong>automação de infraestrutura, governança de ambientes cloud e migração de dados</strong>.
+      </p>
+      <p>
+        Atuo com tecnologias como <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e ferramentas de CI/CD com Azure DevOps</strong>. Tenho como diferencial a habilidade de estruturar ambientes escaláveis e seguros para engenharia de dados, com atenção especial à governança, versionamento de código e controle de acessos.
+      </p>
+      <p>
+        <strong>🔹 União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br>
+        Liderança na <strong>migração automatizada de dados Oracle para PostgreSQL</strong> com <strong>AWS DMS</strong>, incluindo transformação de dados com Python, padronização de schemas, e foco em performance e governança.
+      </p>
+      <p>
+        <strong>🔹 Ipiranga – Automação de CI/CD e Governança em Ambientes de Engenharia de Dados e BI (Dez 2024 – Mar 2025)</strong><br>
+        Estruturação de <strong>pipelines CI/CD para Azure Automation Accounts</strong>, automações em <strong>Power BI com Microsoft Fabric</strong>, backups automatizados via Runbooks e controle rigoroso de custos e permissões (FinOps + Service Principals).
+      </p>
+      <p>
+        <strong>🔹 Ipiranga – Governança e Otimização de Ambientes de Dados e Desenvolvimento (Mai 2023 – Nov 2024)</strong><br>
+        Atuação em <strong>governança de ambientes Azure</strong>, com foco em organização do Data Lake, controle de acessos, automações com Azure DevOps, utilização de Azure Bastion e aplicação de tags para análise de custos por projeto.
+      </p>
+      <p>
+        Tenho uma abordagem prática, orientada a resultados e inovação contínua. Estou sempre em busca de desafios que envolvam integração entre nuvem e dados, e que tragam impacto real em escalabilidade e eficiência operacional.
+      </p>
 
-  <section>
-    <h3>Contato</h3>
-    <p class="contact-links">
-      <a href="mailto:lc.rochaaa@hotmail.com" target="_blank" rel="noopener noreferrer">E-mail</a>
-      <a href="https://wa.me/21982890537" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/lucas-rocha1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/lucasrochaaa1" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <!-- Botão para baixar o currículo -->
-      <a href="cv-lucas-rocha.pdf" download="LucasRocha_Curriculo.pdf" class="btn-download">
-        Baixar Currículo
-      </a>
-    </p>
-  </section>
+      <p>
+        📩 <strong>E-mail:</strong> lc.rochaaa@hotmail.com<br>
+        📞 <strong>Telefone:</strong> (21) 98289-0537
+      </p>
 
-  <footer>
-    &copy; 2025 Lucas Rocha da Silva. Todos os direitos reservados.
-  </footer>
-
-</body>
-</html>
+      <!-- Botão de download do currículo -->
+      <div style="margin-top: 20px;">
+        <a href="cv-lucas-rocha.pdf" download class="btn-download" style="padding: 10px 20px; background-color: #007BFF; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          📄 Baixar Currículo em PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
