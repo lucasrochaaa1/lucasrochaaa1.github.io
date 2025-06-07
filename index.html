@@ -1,198 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucas Rocha - Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lucas Rocha – Portfólio</title>
   <style>
     :root {
-      --color-bg: #121212;
-      --color-text: #eee;
-      --color-primary: #0af;
-      --color-primary-dark: #0056b3;
-      --color-secondary: #007BFF;
-      --color-link-hover: #54a0ff;
-      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --bg: #121212;
+      --text: #eee;
+      --blue: #0af;
+      --blue-dark: #0056b3;
+      --blue2: #007BFF;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: var(--font-family);
-      background-color: var(--color-bg);
-      color: var(--color-text);
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      animation: fadeIn 0.8s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
+      display: flex;
+      justify-content: center;
       padding: 20px;
     }
-
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
     header {
       text-align: center;
-      margin-top: 40px;
       margin-bottom: 40px;
     }
-
     header img.foto {
-      width: 160px;
-      height: 160px;
+      width: 160px; height: 160px;
       border-radius: 50%;
-      border: 3px solid var(--color-secondary);
+      border: 3px solid var(--blue2);
       object-fit: cover;
-      display: block;
-      margin: 0 auto 15px;
-      box-shadow: 0 0 10px var(--color-primary);
-      transition: transform 0.3s ease;
+      transition: transform .3s, box-shadow .3s;
+      box-shadow: 0 0 10px var(--blue);
     }
-    header img.foto:hover,
-    header img.foto:focus {
-      transform: scale(1.05);
-      outline: none;
-      box-shadow: 0 0 15px var(--color-primary);
-    }
-
+    header img.foto:hover { transform: scale(1.05); box-shadow: 0 0 15px var(--blue); }
     header h1 {
-      margin-top: 0;
+      margin: 15px 0 0;
       font-size: 2.5rem;
       letter-spacing: 2px;
-      color: var(--color-primary);
-      text-transform: uppercase;
+      color: var(--blue);
     }
-
-    main section {
-      margin-bottom: 40px;
-    }
-
+    section { margin-bottom: 40px; }
     h2 {
-      border-bottom: 3px solid var(--color-primary);
+      font-size: 2rem;
+      color: var(--blue);
+      border-bottom: 3px solid var(--blue);
       padding-bottom: 8px;
       margin-bottom: 20px;
-      font-weight: 600;
-      color: var(--color-primary);
-      font-size: 2rem;
     }
-
     h3 {
-      color: var(--color-primary);
+      font-size: 1.5rem;
+      color: var(--blue);
       margin-top: 30px;
       margin-bottom: 15px;
-      font-size: 1.5rem;
     }
-
-    p, li {
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-      line-height: 1.5;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
+    p, li { font-size: 1.1rem; margin-bottom: 15px; }
+    ul { padding-left: 20px; }
     a.btn-download {
       display: inline-block;
-      background-color: var(--color-secondary);
-      color: white;
+      background: var(--blue2);
+      color: #fff;
       padding: 12px 25px;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-      margin-top: 15px;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+      transition: background .3s, box-shadow .3s;
     }
-    a.btn-download:hover,
-    a.btn-download:focus {
-      background-color: var(--color-primary-dark);
+    a.btn-download:hover {
+      background: var(--blue-dark);
       box-shadow: 0 6px 12px rgba(0,86,179,0.6);
-      outline: none;
     }
-
-    .contact-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
+    .contact-list { list-style: none; padding: 0; }
     .contact-list li {
+      display: flex; align-items: center;
       margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      font-size: 1.1rem;
-      color: var(--color-text);
     }
-
     .contact-list a {
-      color: var(--color-primary);
-      text-decoration: none;
+      color: var(--blue);
       margin-left: 10px;
-      transition: color 0.3s ease;
+      text-decoration: none;
+      transition: color .3s;
     }
-    .contact-list a:hover,
-    .contact-list a:focus {
-      text-decoration: underline;
-      color: var(--color-link-hover);
-      outline: none;
-    }
-
+    .contact-list a:hover { color: #54a0ff; text-decoration: underline; }
     .contact-icon {
-      width: 24px;
-      height: 24px;
+      width: 24px; height: 24px;
       flex-shrink: 0;
-    }
-
-    /* Responsividade */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.6rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-      }
-      p, li {
-        font-size: 1rem;
-      }
-      .container {
-        padding: 15px;
-      }
-      a.btn-download {
-        padding: 10px 20px;
-      }
+      fill: var(--blue);
     }
   </style>
 </head>
 <body>
   <div class="container">
-
     <header>
-      <img class="foto" src="lucas.jpg" alt="Foto do Lucas Rocha da Silva sorrindo" tabindex="0" />
+      <img class="foto" src="lucas.jpg" alt="Foto do Lucas Rocha da Silva">
       <h1>LUCAS ROCHA DA SILVA</h1>
     </header>
 
     <main>
       <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em automação de infraestrutura, governança de ambientes cloud e migração de dados.</p>
-        <p>Atuo com tecnologias como <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e ferramentas de CI/CD com Azure DevOps</strong>. Tenho como diferencial a habilidade de estruturar ambientes escaláveis e seguros para engenharia de dados, com atenção especial à governança, versionamento de código e controle de acessos.</p>
-        <p>Tenho uma abordagem prática, orientada a resultados e inovação contínua. Estou sempre em busca de desafios que envolvam integração entre nuvem e dados, e que tragam impacto real em escalabilidade e eficiência operacional.</p>
+        <p>Sou <strong>Lucas Rocha</strong>, profissional focado em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em automação, governança em nuvem e migração de dados.</p>
+        <p>Atuo com <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI, Azure DevOps</strong>. Estruturo ambientes escaláveis e seguros, com foco em governança, versionamento e automação.</p>
+        <p>Tenho perfil prático e orientado a resultados, sempre em busca de integrações entre nuvem e dados que tragam eficiência operacional e escala.</p>
       </section>
 
       <section id="experiencias">
@@ -200,27 +115,27 @@
         <ul>
           <li>
             <strong>Radix – Analista de Soluções de Dados</strong><br>
-            Trabalho focado em automação de pipelines de dados, governança em ambientes cloud e otimização de custos.
+            Automação de pipelines, governança cloud e otimização de custo.
           </li>
           <li>
             <strong>Dhata4 – Engenharia de Dados e Projetos Cloud</strong><br>
-            Envolvimento em projetos de migração e automação para melhorar a governança e a escalabilidade dos dados.
+            Migração e automação para melhor governança e escalabilidade.
           </li>
         </ul>
 
         <h3>Projetos Destacados</h3>
         <ul>
           <li>
-            <strong>União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br>
-            Liderança na migração automatizada de dados Oracle para PostgreSQL com AWS DMS, incluindo transformação de dados com Python, padronização de schemas, e foco em performance e governança.
+            <strong>União Brasileira de Compositores – Migração Abr/2025</strong><br>
+            Liderança na migração Oracle → PostgreSQL com AWS DMS, transformações via Python, padronização de schemas e foco em performance e governança.
           </li>
           <li>
-            <strong>Ipiranga – Automação de CI/CD e Governança (Dez 2024 – Mar 2025)</strong><br>
-            Estruturação de pipelines CI/CD para Azure Automation Accounts, automações em Power BI com Microsoft Fabric, backups automatizados via Runbooks e controle rigoroso de custos e permissões (FinOps + Service Principals).
+            <strong>Ipiranga – Automação CI/CD Dez/2024–Mar/2025</strong><br>
+            Pipelines CI/CD para Azure Automation, automação Power BI, backups via Runbooks e gestão FinOps & Service Principals.
           </li>
           <li>
-            <strong>Ipiranga – Governança e Otimização de Ambientes de Dados (Mai 2023 – Nov 2024)</strong><br>
-            Atuação em governança de ambientes Azure, com foco em organização do Data Lake, controle de acessos, automações com Azure DevOps, uso de Azure Bastion e aplicação de tags para análise de custos por projeto.
+            <strong>Ipiranga – Governança Azure Mai/2023–Nov/2024</strong><br>
+            Estruturação de Data Lake, controle de acesso, automações Azure DevOps, Azure Bastion e tagging para análise de custos.
           </li>
         </ul>
       </section>
@@ -229,22 +144,21 @@
         <h2>Contato</h2>
         <ul class="contact-list">
           <li>
-            <img class="contact-icon" src="email.jpg" alt="Ícone de Email" />
+            <svg class="contact-icon" viewBox="0 0 24 24"><path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zM4 18v-9l7.5 6 7.5-6v9H4z"/></svg>
             Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a>
           </li>
           <li>
-            <img class="contact-icon" src="whatsapp.jpg" alt="Ícone do WhatsApp" />
-            WhatsApp: <a href="https://wa.me/5521982890537" target="_blank" rel="noopener noreferrer">(21) 98289-0537</a>
+            <svg class="contact-icon" viewBox="0 0 24 24"><path d="M17.472 14.382a1.793 1.793 0 00-2.37-.16l-1.05.69a.464.464 0 01-.52-.04c-.533-.49-1.09-1.01-1.595-1.54-.5-.53-.98-1.1-1.43-1.7a.5.5 0 01.06-.65l.8-1.05a.5.5 0 00-.41-.82c-2.12-.05-4.15-.8-5.7-2.34C4.82 7.11 4 5.17 4 3a1.5 1.5 0 011.5-1.5A11.83 11.83 0 0120.5 14.5c0 .8-.1 1.62-.5 2.4a1.5 1.5 0 01-2.528.12l-.001-.14z"/></svg>
+            WhatsApp: <a href="https://wa.me/5521982890537" target="_blank">(21) 98289-0537</a>
           </li>
           <li>
-            <img class="contact-icon" src="linkedin.jpg" alt="Ícone do LinkedIn" />
-            LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank" rel="noopener noreferrer">linkedin.com/in/lucas-rocha-31b4931a1</a>
+            <svg class="contact-icon" viewBox="0 0 24 24"><path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zm-9 19H5v-8h5v8zm0-10H5V5h5v4zm2 10h5v-4h-5v4zm0-6h5V5h-5v8z"/></svg>
+            LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">linkedin.com/in/lucas-rocha-31b4931a1</a>
           </li>
         </ul>
-        <a class="btn-download" href="cv-lucas-rocha.pdf" download="cv-lucas-rocha.pdf">Baixar Currículo</a>
+        <a class="btn-download" href="cv-lucas-rocha.pdf" download>📄 Baixar Currículo</a>
       </section>
     </main>
-
   </div>
 </body>
 </html>
