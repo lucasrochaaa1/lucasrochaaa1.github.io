@@ -20,6 +20,7 @@
       padding: 20px;
       max-width: 900px;
       margin: 0 auto;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     header {
@@ -31,28 +32,35 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 3px solid #fff;
+      border: 3px solid #00aaff;
       object-fit: cover;
       margin-bottom: 20px;
+      transition: border-color 0.3s ease;
+    }
+
+    header img:hover {
+      border-color: #0088cc;
     }
 
     header h1 {
       font-size: 2.8rem;
       margin-bottom: 5px;
       color: #ffffff;
+      font-weight: 700;
     }
 
     header h2 {
       font-size: 1.3rem;
-      font-weight: 400;
+      font-weight: 500;
       color: #aaaaaa;
       margin-bottom: 10px;
+      font-style: italic;
     }
 
     header p {
       font-size: 1rem;
       color: #777777;
-      font-style: italic;
+      font-style: normal;
     }
 
     section {
@@ -62,9 +70,10 @@
     section h3 {
       font-size: 1.8rem;
       margin-bottom: 15px;
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid #00aaff;
       padding-bottom: 8px;
       color: #f0f0f0;
+      font-weight: 700;
     }
 
     p {
@@ -81,9 +90,10 @@
     ul li {
       margin-bottom: 10px;
       font-size: 1.1rem;
-      padding-left: 15px;
+      padding-left: 25px;
       position: relative;
       color: #ddd;
+      line-height: 1.4;
     }
 
     ul li::before {
@@ -92,12 +102,16 @@
       left: 0;
       color: #00aaff;
       font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1;
+      top: 2px;
     }
 
     .skills-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 10px;
     }
 
     .skill-item {
@@ -107,6 +121,14 @@
       color: #00aaff;
       font-weight: 600;
       font-size: 1rem;
+      box-shadow: 0 0 5px #00aaff88;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: default;
+    }
+
+    .skill-item:hover {
+      background-color: #00aaff;
+      color: #121212;
     }
 
     .contact-links a {
@@ -127,6 +149,7 @@
       margin-top: 50px;
       color: #555;
       font-size: 0.9rem;
+      font-style: italic;
     }
 
     @media (max-width: 600px) {
@@ -199,11 +222,11 @@
   <section>
     <h3>Contato</h3>
     <p class="contact-links">
-      <a href="mailto:lucasrochaaa@example.com" target="_blank" rel="noopener noreferrer">E-mail</a>
-      <a href="https://wa.me/seunumerodetelefone" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:lc.rochaaa@hotmail.com" target="_blank" rel="noopener noreferrer">E-mail</a>
+      <a href="https://wa.me/21982890537" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/lucas-rocha-1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/lucasrochaaa1" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="seulinkdocurriculo.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
+      <a href="cv-lucas-rocha.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
     </p>
   </section>
 
