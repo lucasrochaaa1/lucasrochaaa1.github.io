@@ -1,118 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Rocha | Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Rocha | Cloud, DevOps & Engenharia de Dados</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: #fff;
+      background-color: #0f0f0f;
+      color: #ffffff;
       line-height: 1.6;
     }
-
-    .container {
+    header {
+      background-color: #1a1a1a;
+      padding: 30px 0;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #007BFF;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 40px 20px;
       max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
     }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .section-heading h2 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-
-    .section-heading hr {
-      width: 60px;
-      border: 2px solid #007BFF;
-      margin: 10px auto 0;
-    }
-
-    .about-content p {
+    .section h2 {
+      font-size: 1.8em;
       margin-bottom: 20px;
-      font-size: 1.05em;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
     }
-
+    .section p, .section li {
+      font-size: 1.05em;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
     strong {
       color: #1E90FF;
     }
-
+    .contact a {
+      color: #1E90FF;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
     .btn-download {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 10px 20px;
       background-color: #007BFF;
       color: #fff;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      margin-top: 20px;
     }
-
     .btn-download:hover {
       background-color: #0056b3;
-    }
-
-    @media (max-width: 768px) {
-      .section-heading h2 {
-        font-size: 2em;
-      }
-
-      .about-content p {
-        font-size: 1em;
-      }
     }
   </style>
 </head>
 <body>
 
-  <section id="sobre" class="section">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Sobre Mim</h2>
-        <hr>
-      </div>
-      <div class="about-content">
-        <p>
-          Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em <strong>automação de infraestrutura, governança de ambientes cloud e migração de dados</strong>.
-        </p>
-        <p>
-          Atuo com tecnologias como <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e ferramentas de CI/CD com Azure DevOps</strong>. Tenho como diferencial a habilidade de estruturar ambientes escaláveis e seguros para engenharia de dados, com atenção especial à governança, versionamento de código e controle de acessos.
-        </p>
-        <p>
-          <strong>🔹 União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br>
-          Liderança na <strong>migração automatizada de dados Oracle para PostgreSQL</strong> com <strong>AWS DMS</strong>, incluindo transformação de dados com Python, padronização de schemas, e foco em performance e governança.
-        </p>
-        <p>
-          <strong>🔹 Ipiranga – Automação de CI/CD e Governança em Ambientes de Engenharia de Dados e BI (Dez 2024 – Mar 2025)</strong><br>
-          Estruturação de <strong>pipelines CI/CD para Azure Automation Accounts</strong>, automações em <strong>Power BI com Microsoft Fabric</strong>, backups automatizados via Runbooks e controle rigoroso de custos e permissões (FinOps + Service Principals).
-        </p>
-        <p>
-          <strong>🔹 Ipiranga – Governança e Otimização de Ambientes de Dados e Desenvolvimento (Mai 2023 – Nov 2024)</strong><br>
-          Atuação em <strong>governança de ambientes Azure</strong>, com foco em organização do Data Lake, controle de acessos, automações com Azure DevOps, utilização de Azure Bastion e aplicação de tags para análise de custos por projeto.
-        </p>
-        <p>
-          Tenho uma abordagem prática, orientada a resultados e inovação contínua. Estou sempre em busca de desafios que envolvam integração entre nuvem e dados, e que tragam impacto real em escalabilidade e eficiência operacional.
-        </p>
+  <header>
+    <img src="foto-lucas.jpg" alt="Lucas Rocha">
+    <h1>Lucas Rocha</h1>
+    <p>Cloud, DevOps & Engenharia de Dados</p>
+  </header>
 
-        <p>
-          📩 <strong>E-mail:</strong> lc.rochaaa@hotmail.com<br>
-          📞 <strong>Telefone:</strong> (21) 98289-0537
-        </p>
+  <section class="section">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com experiência sólida em <strong>automação de infraestrutura, governança de ambientes cloud e migração de dados</strong>.
+    </p>
+    <p>
+      Experiência prática com <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e CI/CD com Azure DevOps</strong>. Diferencial na criação de ambientes escaláveis, com versionamento, segurança e foco em governança.
+    </p>
+  </section>
 
-        <div style="margin-top: 20px;">
-          <a href="cv-lucas-rocha.pdf" download class="btn-download">
-            📄 Baixar Currículo em PDF
-          </a>
-        </div>
-      </div>
-    </div>
+  <section class="section">
+    <h2>Experiências</h2>
+    <ul>
+      <li><strong>Radix Engenharia e Software – Analista de Soluções de Dados (2025)</strong></li>
+      <li><strong>Dhata4 – DevOps & Dados (2024)</strong></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Projetos em Destaque</h2>
+    <p><strong>🔹 União Brasileira de Compositores – Migração de Dados (Abr 2025)</strong><br>
+      Migração automatizada de dados Oracle para PostgreSQL com <strong>AWS DMS</strong>, transformações com Python e padronização de schemas.
+    </p>
+    <p><strong>🔹 Ipiranga – Automação de CI/CD e Governança (Dez 2024 – Mar 2025)</strong><br>
+      Pipelines CI/CD para <strong>Azure Automation Accounts</strong>, automações no <strong>Power BI com Microsoft Fabric</strong>, e controle de custos e permissões com Service Principals.
+    </p>
+    <p><strong>🔹 Ipiranga – Governança de Ambientes de Dados (Mai 2023 – Nov 2024)</strong><br>
+      Organização de <strong>Data Lake no Azure</strong>, automações com DevOps, utilização de Bastion e controle de acessos via tags e políticas.
+    </p>
+  </section>
+
+  <section class="section contact">
+    <h2>Contato</h2>
+    <a href="mailto:lc.rochaaa@hotmail.com">📧 lc.rochaaa@hotmail.com</a>
+    <a href="https://wa.me/5521982890537" target="_blank">📱 WhatsApp: (21) 98289-0537</a>
+    <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">🔗 LinkedIn</a>
+    <a href="cv-lucas-rocha.pdf" download class="btn-download">📄 Baixar Currículo em PDF</a>
   </section>
 
 </body>
