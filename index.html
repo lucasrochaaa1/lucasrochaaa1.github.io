@@ -22,17 +22,17 @@
       margin-top: 40px;
       margin-bottom: 40px;
     }
-    header img.foto-perfil {
+    header img.foto {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       border: 3px solid #007BFF;
       object-fit: cover;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 15px;
     }
     header h1 {
-      margin-top: 15px;
+      margin-top: 0;
       font-size: 2.5rem;
       letter-spacing: 2px;
       color: #0af;
@@ -99,8 +99,6 @@
       width: 24px;
       height: 24px;
       flex-shrink: 0;
-      filter: invert(64%) sepia(90%) saturate(5259%) hue-rotate(192deg) brightness(92%) contrast(94%);
-      /* Esse filtro transforma o jpg branco/escuro em azul (#0af) para combinar com o layout */
     }
   </style>
 </head>
@@ -108,7 +106,7 @@
   <div class="container">
 
     <header>
-      <img src="lucas.jpg" alt="Foto de Lucas Rocha" class="foto-perfil" />
+      <img class="foto" src="lucas.jpg" alt="Foto de Lucas Rocha" />
       <h1>LUCAS ROCHA DA SILVA</h1>
     </header>
 
@@ -153,18 +151,19 @@
       <h2>Contato</h2>
       <ul class="contact-list">
         <li>
-          <img src="email.jpg" alt="Ícone Email" class="contact-icon" />
+          <img class="contact-icon" src="email.jpg" alt="Ícone Email" />
           Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a>
         </li>
         <li>
-          <img src="whatsapp.jpg" alt="Ícone WhatsApp" class="contact-icon" />
+          <img class="contact-icon" src="whatsapp.jpg" alt="Ícone WhatsApp" />
           WhatsApp: <a href="https://wa.me/5521982890537" target="_blank">(21) 98289-0537</a>
         </li>
         <li>
-          <img src="linkedin.jpg" alt="Ícone LinkedIn" class="contact-icon" />
+          <img class="contact-icon" src="linkedin.jpg" alt="Ícone LinkedIn" />
           LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">linkedin.com/in/lucas-rocha-31b4931a1</a>
         </li>
       </ul>
+      <a class="btn-download" href="cv-lucas-rocha.pdf" download="cv-lucas-rocha.pdf">Baixar Currículo</a>
     </section>
 
   </div>
