@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lucas Rocha - Portfólio</title>
+
+  <!-- Font Awesome para ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVU7Uo4sR9HrNyzFgNnGshHTu7YeqzJlvAtA5j7hHk6wB+Gkjbb7KZH5EV5bJk0R7ccJ9TvnwLxaG9AN5eUQhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <style>
     body {
       margin: 0;
@@ -55,6 +65,8 @@
       list-style-type: disc;
       padding-left: 20px;
     }
+
+    /* Botão de download */
     a.btn-download {
       display: inline-block;
       background-color: #007BFF;
@@ -65,22 +77,45 @@
       text-decoration: none;
       margin-top: 15px;
       transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
     }
     a.btn-download:hover {
       background-color: #0056b3;
+      box-shadow: 0 6px 8px rgba(0, 86, 179, 0.6);
+    }
+
+    /* Lista de contato com ícones */
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-list li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     .contact-list a {
       color: #0af;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
     .contact-list a:hover {
+      color: #66b2ff;
       text-decoration: underline;
+    }
+    /* Ícones estilo */
+    .contact-list i {
+      color: #0af;
+      font-size: 1.3rem;
+      min-width: 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
-
     <header>
       <img src="lucas.jpg" alt="Foto de Lucas Rocha" />
       <h1>LUCAS ROCHA DA SILVA</h1>
@@ -105,8 +140,10 @@
           Envolvimento em projetos de migração e automação para melhorar a governança e a escalabilidade dos dados.
         </li>
       </ul>
+    </section>
 
-      <h3>Projetos Destacados</h3>
+    <section id="projetos">
+      <h2>Projetos Destacados</h2>
       <ul>
         <li>
           <strong>União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br>
@@ -126,13 +163,21 @@
     <section id="contato">
       <h2>Contato</h2>
       <ul class="contact-list">
-        <li>Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a></li>
-        <li>WhatsApp: <a href="https://wa.me/5521982890537" target="_blank">(21) 98289-0537</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">linkedin.com/in/lucas-rocha-31b4931a1/</a></li>
+        <li>
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5521982890537" target="_blank" rel="noopener noreferrer">(21) 98289-0537</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank" rel="noopener noreferrer">linkedin.com/in/lucas-rocha-31b4931a1/</a>
+        </li>
       </ul>
       <a href="cv-lucas-rocha.pdf" download class="btn-download">📄 Baixar Currículo em PDF</a>
     </section>
-
   </div>
 </body>
 </html>
