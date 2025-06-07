@@ -5,161 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lucas Rocha - Portfólio Profissional</title>
   <style>
-    /* Reset básico */
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      margin: 0; padding: 0; box-sizing: border-box;
     }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
+      background-color: #000000; /* fundo preto puro */
+      color: #ffffff; /* texto branco */
       line-height: 1.6;
-      padding: 20px;
+      padding: 30px 20px;
       max-width: 900px;
       margin: 0 auto;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
-
     header img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      border: 3px solid #00aaff;
+      border: 4px solid #007bff; /* azul vibrante */
       object-fit: cover;
       margin-bottom: 20px;
       transition: border-color 0.3s ease;
+      box-shadow: 0 0 15px #007bffaa;
     }
-
     header img:hover {
-      border-color: #0088cc;
+      border-color: #3399ff;
+      box-shadow: 0 0 25px #3399ffcc;
     }
-
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 5px;
       color: #ffffff;
       font-weight: 700;
+      text-shadow: 1px 1px 3px #000000aa;
     }
-
     header h2 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 500;
-      color: #aaaaaa;
-      margin-bottom: 10px;
+      color: #99ccff; /* azul claro */
+      margin-bottom: 15px;
       font-style: italic;
     }
-
     header p {
-      font-size: 1rem;
-      color: #777777;
-      font-style: normal;
+      font-size: 1.1rem;
+      color: #cccccc;
     }
-
     section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
-
     section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #00aaff;
-      padding-bottom: 8px;
-      color: #f0f0f0;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 10px;
+      color: #3399ff;
       font-weight: 700;
+      text-shadow: 1px 1px 3px #000000aa;
     }
-
     p {
-      margin-bottom: 15px;
-      font-size: 1.05rem;
-      color: #ccc;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #e6e6e6;
     }
-
     ul {
       list-style-type: none;
       padding-left: 0;
     }
-
     ul li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      padding-left: 25px;
+      margin-bottom: 15px;
+      font-size: 1.15rem;
+      padding-left: 30px;
       position: relative;
-      color: #ddd;
-      line-height: 1.4;
+      color: #f0f0f0;
+      line-height: 1.5;
+      font-weight: 500;
     }
-
     ul li::before {
       content: "▹";
       position: absolute;
       left: 0;
-      color: #00aaff;
+      color: #007bff;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1;
-      top: 2px;
+      top: 1px;
+      text-shadow: 0 0 4px #007bffaa;
     }
-
     .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
+      gap: 12px;
+      margin-top: 15px;
     }
-
     .skill-item {
-      background-color: #222;
-      padding: 8px 15px;
-      border-radius: 20px;
-      color: #00aaff;
-      font-weight: 600;
-      font-size: 1rem;
-      box-shadow: 0 0 5px #00aaff88;
+      background-color: #121212;
+      padding: 10px 18px;
+      border-radius: 25px;
+      color: #007bff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      box-shadow: 0 0 10px #007bff88;
+      user-select: none;
       transition: background-color 0.3s ease, color 0.3s ease;
       cursor: default;
     }
-
     .skill-item:hover {
-      background-color: #00aaff;
-      color: #121212;
+      background-color: #007bff;
+      color: #000000;
+      box-shadow: 0 0 15px #3399ffcc;
     }
-
     .contact-links a {
-      color: #00aaff;
+      color: #007bff;
       text-decoration: none;
-      margin-right: 15px;
-      font-weight: 600;
+      margin-right: 20px;
+      font-weight: 700;
+      font-size: 1.1rem;
       transition: color 0.3s;
     }
-
     .contact-links a:hover {
-      color: #0088cc;
+      color: #3399ff;
       text-decoration: underline;
     }
-
+    /* Estilo para o botão baixar currículo */
+    .btn-download {
+      display: inline-block;
+      padding: 8px 18px;
+      background-color: #007bff;
+      color: #000000;
+      font-weight: 700;
+      border-radius: 25px;
+      box-shadow: 0 0 10px #007bff88;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .btn-download:hover {
+      background-color: #3399ff;
+      color: #fff;
+      box-shadow: 0 0 15px #3399ffcc;
+    }
     footer {
       text-align: center;
-      margin-top: 50px;
-      color: #555;
-      font-size: 0.9rem;
-      font-style: italic;
+      margin-top: 70px;
+      color: #666666;
+      font-size: 1rem;
+      user-select: none;
     }
-
     @media (max-width: 600px) {
       body {
-        padding: 10px;
+        padding: 15px 10px;
       }
-
       header img {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
+      }
+      header h1 {
+        font-size: 2.4rem;
+      }
+      section h3 {
+        font-size: 1.6rem;
+      }
+      ul li {
+        font-size: 1.05rem;
       }
     }
   </style>
@@ -169,34 +179,50 @@
   <header>
     <img src="lucas.jpg" alt="Foto de Lucas Rocha" />
     <h1>Lucas Rocha da Silva</h1>
-    <h2>DevOps Junior & Engenheiro de Dados | Estudante de Análise e Desenvolvimento de Sistemas</h2>
-    <p>São Gonçalo - RJ | Ipiranga | SENAI | Marisa</p>
+    <h2>Engenheiro Cloud & Engenheiro de Dados | DevOps Junior</h2>
+    <p>São Gonçalo - RJ | Ipiranga | SENAI</p>
   </header>
 
   <section>
     <h3>Quem sou eu?</h3>
     <p>
-      Sou um profissional dedicado e apaixonado por tecnologia, atuando em duas áreas estratégicas: Infraestrutura em Cloud Computing e Engenharia de Dados.
-      Minha experiência inclui automação, integração e otimização de sistemas utilizando tecnologias das principais nuvens: AWS, Azure e Google Cloud.
+      Sou Engenheiro Cloud e Engenheiro de Dados com experiência prática em soluções de infraestrutura e pipelines de dados.
+      Atuo no desenvolvimento de automações e integrações na nuvem, principalmente em Azure, AWS e Google Cloud, com foco em eficiência e escalabilidade.
     </p>
     <p>
-      Trabalho com foco em soluções eficientes, com domínio em Azure Functions, Logic Apps, Databricks, Python, Spark e Power BI.
-      Desde 2022, estudo Análise e Desenvolvimento de Sistemas para ampliar minhas habilidades e contribuir com projetos inovadores.
+      Minha paixão está em criar sistemas confiáveis que otimizem processos e entreguem valor real aos negócios, usando ferramentas como Azure Functions, Logic Apps, Databricks, Python, Spark e Power BI.
     </p>
     <p>
-      Tenho perfil proativo, facilidade em trabalhar em equipe e foco em resultados, sempre aberto a aprender e superar desafios.
+      Estudo Análise e Desenvolvimento de Sistemas para ampliar minhas habilidades técnicas e estar sempre atualizado nas melhores práticas.
     </p>
   </section>
 
   <section>
-    <h3>Experiência & Skills</h3>
+    <h3>Experiência Profissional</h3>
     <ul>
-      <li><strong>DevOps Junior - Ipiranga:</strong> automação de processos em Cloud com Azure Functions, Logic Apps e pipelines Databricks.</li>
-      <li><strong>Engenharia de Dados:</strong> desenvolvimento de pipelines e análise com Spark, Python e Power BI.</li>
-      <li><strong>Estágio SENAI:</strong> experiência prática em estrutura metálica.</li>
-      <li><strong>Operador de Caixa - Marisa:</strong> 2 anos de atendimento e organização.</li>
+      <li>
+        <strong>Dhata4</strong> – Engenharia de Dados e Cloud (2023 – Atual)<br/>
+        Desenvolvimento e manutenção de pipelines de dados, automação de processos em nuvem, e integração entre sistemas com foco em qualidade e performance.
+      </li>
+      <li>
+        <strong>Radix Engenharia</strong> – Suporte Técnico e Infraestrutura Cloud (2021 – 2023)<br/>
+        Atuação em monitoramento, suporte e configuração de ambientes cloud, garantindo alta disponibilidade e segurança das soluções.
+      </li>
     </ul>
+  </section>
 
+  <section>
+    <h3>Projetos</h3>
+    <ul>
+      <li><strong>Automação de Workflows na Azure:</strong> Criação de processos automatizados com Azure Functions e Logic Apps para melhorar a eficiência operacional.</li>
+      <li><strong>Pipelines de Dados com Databricks e Spark:</strong> Desenvolvimento de pipelines para processamento e transformação de grandes volumes de dados.</li>
+      <li><strong>Dashboards de BI:</strong> Construção de dashboards em Power BI para análise estratégica e tomada de decisões baseada em dados.</li>
+      <li><strong>Integração de Sistemas em Cloud:</strong> Projetos que integram diferentes serviços na AWS, Azure e Google Cloud para soluções completas.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Skills Técnicas</h3>
     <div class="skills-list">
       <span class="skill-item">Azure Functions</span>
       <span class="skill-item">Logic Apps</span>
@@ -206,17 +232,10 @@
       <span class="skill-item">Power BI</span>
       <span class="skill-item">AWS</span>
       <span class="skill-item">Azure</span>
-      <span class="skill-item">Google Cloud (em estudo)</span>
+      <span class="skill-item">Google Cloud</span>
+      <span class="skill-item">Automação</span>
+      <span class="skill-item">DevOps</span>
     </div>
-  </section>
-
-  <section>
-    <h3>Projetos</h3>
-    <ul>
-      <li><strong>Automação com Azure Functions:</strong> criação de workflows automatizados para processos internos.</li>
-      <li><strong>Pipeline Databricks com Spark:</strong> desenvolvimento de pipelines robustos para processamento de dados em larga escala.</li>
-      <li><strong>Dashboards Power BI:</strong> análise e visualização de dados para suporte à tomada de decisão.</li>
-    </ul>
   </section>
 
   <section>
@@ -224,9 +243,12 @@
     <p class="contact-links">
       <a href="mailto:lc.rochaaa@hotmail.com" target="_blank" rel="noopener noreferrer">E-mail</a>
       <a href="https://wa.me/21982890537" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/lucas-rocha-1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/lucas-rocha1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/lucasrochaaa1" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="cv-lucas-rocha.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
+      <!-- Botão para baixar o currículo -->
+      <a href="cv-lucas-rocha.pdf" download="LucasRocha_Curriculo.pdf" class="btn-download">
+        Baixar Currículo
+      </a>
     </p>
   </section>
 
