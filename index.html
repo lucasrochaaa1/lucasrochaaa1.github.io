@@ -55,14 +55,33 @@
       border-bottom: 1px solid #222;
     }
     /* Ícones contatos */
+    .contact-icon {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+      filter: brightness(1.5);
+      /* Para SVG */
+      fill: #39ff14;
+    }
     .contact-icon-img {
       width: 24px;
+      height: 24px;
       vertical-align: middle;
       margin-right: 8px;
       filter: brightness(1.5);
     }
     ul.contact-list li {
       margin-bottom: 15px;
+    }
+    /* Links da lista de contato brancos */
+    ul.contact-list li a {
+      color: #fff !important;
+      text-decoration: none;
+    }
+    ul.contact-list li a:hover {
+      text-decoration: underline;
+      color: #39ff14 !important;
     }
     a {
       color: #39ff14;
@@ -100,7 +119,8 @@
 
 <section id="sobre">
   <h2>Sobre Mim</h2>
-  <p>Tenho 1 ano de experiência como DevOps Junior na Ipiranga, atuando com Azure, Databricks, Python e automações diversas. Também sou estudante de Análise e Desenvolvimento de Sistemas, buscando sempre aprendizado e evolução na área de tecnologia.</p>
+  <p>Tenho 1 ano de experiência como DevOps Junior na Ipiranga, atuando com Azure, Databricks, automações, gerenciamento de pipelines e monitoramento.
+  Também sou estudante de Análise e Desenvolvimento de Sistemas, buscando sempre aprendizado e evolução na área de tecnologia.</p>
 </section>
 
 <section id="skills">
@@ -131,6 +151,7 @@
   <h2>Contato</h2>
   <ul class="contact-list">
     <li>
+      <!-- Ícone imagem hotmail -->
       <img src="hotmail.jpg" alt="Ícone Email" class="contact-icon-img" />
       Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a>
     </li>
@@ -144,7 +165,7 @@
     </li>
   </ul>
 
-  <a href="cv-lucas-rocha.pdf" class="btn-download" download>Baixar Currículo</a>
+  <a href="Lucas_Rocha_Curriculo.pdf" class="btn-download" download>Baixar Currículo</a>
 </section>
 
 <section id="Dhata4">
