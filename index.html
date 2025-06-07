@@ -2,74 +2,255 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lucas Rocha - Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas Rocha - Portfólio Profissional</title>
   <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e1e1e1;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
     }
+
     .container {
-      background: white;
-      max-width: 800px;
-      margin: auto;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      width: 100%;
+      background-color: #1e1e1e;
+      border-radius: 14px;
+      padding: 40px 50px;
+      box-shadow: 0 0 25px rgba(255 102 0, 0.4);
     }
+
+    header {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
     .profile-pic {
-      width: 160px;
+      flex-shrink: 0;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-bottom: 20px;
       object-fit: cover;
+      border: 3px solid #ff6600;
+      background-color: #333;
+      box-shadow: 0 0 10px #ff6600;
     }
-    h1 {
-      font-size: 2rem;
-      color: #222;
+
+    header div {
+      flex: 1;
+      min-width: 250px;
     }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #ff6600;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    header h2 {
+      font-weight: 500;
+      font-size: 1.3rem;
+      color: #bbb;
+      margin-bottom: 6px;
+    }
+
+    .location {
+      font-style: italic;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h3 {
+      color: #ff6600;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ff6600;
+      padding-bottom: 8px;
+      font-weight: 600;
+    }
+
     p {
+      font-size: 1.05rem;
+      color: #ccc;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #292929;
+      margin-bottom: 10px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
       font-size: 1rem;
-      color: #444;
     }
-    .buttons a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 20px;
-      border-radius: 6px;
+
+    ul li:hover {
+      background-color: #ff6600;
+      color: #121212;
+      cursor: default;
+    }
+
+    .project-link {
+      color: #ff6600;
       text-decoration: none;
-      color: white;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    .linkedin { background: #0a66c2; }
-    .whatsapp { background: #25d366; }
-    .github   { background: #333; }
-    .email    { background: #ff6600; }
+
+    .project-link:hover {
+      color: #ffa04d;
+      text-decoration: underline;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .btn {
+      background-color: #ff6600;
+      color: #121212;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 0 10px #ff6600aa;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ffa04d;
+      box-shadow: 0 0 20px #ffa04dcc;
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #121212;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+      header div {
+        min-width: 100%;
+        text-align: center;
+      }
+      .buttons {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="lucas.jpg" alt="Lucas Rocha" class="profile-pic" />
+  <main class="container">
+    <header>
+      <img src="lucas.jpg" alt="Foto Lucas Rocha" class="profile-pic" />
+      <div>
+        <h1>Lucas Rocha da Silva</h1>
+        <h2>DevOps Junior | Estudante de Análise e Desenvolvimento de Sistemas</h2>
+        <p class="location">São Gonçalo - RJ | Ipiranga | SENAI | Marisa</p>
+      </div>
+    </header>
 
-    <h1>Lucas Rocha da Silva</h1>
-    <p>DevOps Junior | Estudante de Análise e Desenvolvimento de Sistemas</p>
-    <p>São Gonçalo - RJ | Ipiranga | SENAI | Marisa</p>
-    
-    <div class="buttons">
-      <a href="mailto:lc.rochaaa@hotmail.com" class="email">Enviar E-mail</a>
-      <a href="https://wa.me/5521982890537" target="_blank" class="whatsapp">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/lucas-rocha1" target="_blank" class="linkedin">LinkedIn</a>
-      <a href="https://github.com/lucasrochaaa1" target="_blank" class="github">GitHub</a>
-      <a href="cv-lucas-rocha.pdf" download class="email">Baixar Currículo</a>
-    </div>
+    <section id="quem-sou-eu">
+      <h3>Quem sou eu?</h3>
+      <p>
+        Sou um profissional dedicado e apaixonado por tecnologia e automação. Com experiência em DevOps na Ipiranga, possuo conhecimento em Azure Functions, Logic Apps, Databricks, Python, Spark e Power BI. Estudo Análise e Desenvolvimento de Sistemas desde 2022, buscando sempre ampliar minhas habilidades para entregar soluções inovadoras e eficientes.
+      </p>
+      <p>
+        Tenho perfil proativo, facilidade em trabalhar em equipe e foco em resultados, sempre aberto a aprender e contribuir com projetos desafiadores.
+      </p>
+    </section>
 
-    <hr />
+    <section id="experiencia">
+      <h3>Experiência & Skills</h3>
+      <ul>
+        <li><strong>DevOps Junior</strong> - Ipiranga (uso de Azure Functions, Logic Apps, Databricks)</li>
+        <li><strong>Estágio</strong> - SENAI (estrutura metálica)</li>
+        <li><strong>Operador de Caixa</strong> - Marisa (2 anos de experiência)</li>
+      </ul>
+      <ul>
+        <li><strong>Stack:</strong> Azure (Functions, Logic Apps, Databricks), Python, Spark, Power BI</li>
+        <li><strong>Estudando:</strong> Análise e Desenvolvimento de Sistemas (desde 2022)</li>
+      </ul>
+    </section>
 
-    <p><strong>Experiência:</strong> DevOps Junior na Ipiranga, estágio no SENAI (estrutura metálica), e 2 anos como operador de caixa na Marisa.</p>
-    <p><strong>Stack:</strong> Azure (Functions, Logic Apps, Databricks), Python, Spark, Power BI</p>
-    <p><strong>Estudando:</strong> Análise e Desenvolvimento de Sistemas (desde 2022)</p>
-  </div>
+    <section id="projetos">
+      <h3>Projetos</h3>
+      <ul>
+        <li><a href="https://github.com/lucasrochaaa1/projeto1" target="_blank" class="project-link">Projeto 1 - Automação Azure Functions</a></li>
+        <li><a href="https://github.com/lucasrochaaa1/projeto2" target="_blank" class="project-link">Projeto 2 - Pipeline Databricks com Spark</a></li>
+        <li><a href="https://github.com/lucasrochaaa1/projeto3" target="_blank" class="project-link">Projeto 3 - Dashboards Power BI para análise</a></li>
+      </ul>
+    </section>
+
+    <section id="contatos">
+      <h3>Contato</h3>
+      <div class="buttons">
+        <a href="mailto:lc.rochaaa@hotmail.com" class="btn" title="Enviar e-mail">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 8l8 5 8-5v-2l-8 5-8-5v2z"/>
+          </svg>
+          E-mail
+        </a>
+        <a href="https://wa.me/5521982890537" target="_blank" class="btn" title="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.52 3.48a11.72 11.72 0 00-16.56 0 11.717 11.717 0 00-3.39 8.3c0 2.11.55 4.19 1.59 6.04L2 22l4.35-1.12a11.703 11.703 0 006.09 1.55c6.49 0 11.74-5.25 11.74-11.74 0-3.14-1.23-6.09-3.66-8.21zM12 19c-1.46 0-2.91-.39-4.15-1.13l-.3-.17-2.6.67.69-2.52-.19-.31a7.91 7.91 0 01-1.3-4.47c0-4.39 3.57-7.96 7.96-7.96 2.12 0 4.11.82 5.6 2.31a7.898 7.898 0 012.33 5.65c0 4.39-3.57 7.96-7.96 7.96zm4.27-6.9c-.23-.11-1.35-.66-1.56-.73-.21-.06-.36-.11-.51.11-.15.22-.6.73-.73.88-.13.15-.26.17-.49.06-.23-.11-1-.37-1.9-1.17-.7-.62-1.17-1.38-1.3-1.61-.13-.22-.01-.34.1-.45.1-.1.23-.26.34-.39.11-.13.15-.22.23-.36.08-.14.04-.26-.02-.37-.06-.11-.5-1.2-.69-1.64-.18-.43-.36-.37-.51-.38-.13 0-.28-.01-.43-.01-.15 0-.37.06-.57.26-.21.21-.8.78-.8 1.9 0 1.12.82 2.2.93 2.36.11.15 1.6 2.45 3.88 3.43.54.23.96.37 1.29.48.54.18 1.03.16 1.42.1.43-.07 1.35-.55 1.54-1.09.2-.54.2-1 .14-1.1-.07-.1-.22-.15-.45-.26z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank" class="btn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 11-.001 5.001 2.5 2.5 0 01.001-5.001zm.04 7.53H2.5V20h2.52v-8.97zm7.9-4.8c-1.37 0-2.22.74-2.6 1.26v-1.08H8.17V20h2.52v-5.04c0-1.33.48-2.19 1.69-2.19 1.19 0 1.28 1.03 1.28 2.27V20h2.52v-5.64c0-3.03-1.6-4.44-3.73-4.44z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/lucasrochaaa1" target="_blank" class="btn" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.58 2 12.16c0 4.5 2.87 8.31 6.84 9.66.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.36-3.37-1.36-.46-1.19-1.12-1.5-1.12-1.5-.91-.63.07-.62.07-.62 1.01.07 1.54 1.05 1.54 1.05.9 1.57 2.36 1.12 2.94.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.46 9.46 0 012.5-.35c.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.73 1.03 1.66 1.03 2.79 0 3.97-2.35 4.84-4.59 5.09.36.32.67.95.67 1.92 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.18 10.18 0 0022 12.16C22 6.58 17.52 2 12 2z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="cv-lucas-rocha.pdf" download class="btn" title="Baixar Currículo">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h4.66v-4h3.84L12 2z"/>
+          </svg>
+          Currículo
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
