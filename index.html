@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Rocha – Portfólio</title>
   <style>
     :root {
@@ -10,42 +10,60 @@
       --text: #eee;
       --blue: #0af;
       --blue-dark: #0056b3;
-      --blue2: #007BFF;
+      --blue2: #007bff;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
+      background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
       display: flex;
       justify-content: center;
       padding: 20px;
     }
+
     .container {
       max-width: 900px;
       width: 100%;
     }
+
     header {
       text-align: center;
       margin-bottom: 40px;
     }
-    header img.foto {
-      width: 160px; height: 160px;
+
+    .foto {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       border: 3px solid var(--blue2);
       object-fit: cover;
-      transition: transform .3s, box-shadow .3s;
+      transition: transform 0.3s, box-shadow 0.3s;
       box-shadow: 0 0 10px var(--blue);
     }
-    header img.foto:hover { transform: scale(1.05); box-shadow: 0 0 15px var(--blue); }
-    header h1 {
-      margin: 15px 0 0;
+
+    .foto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--blue);
+    }
+
+    h1 {
+      margin-top: 15px;
       font-size: 2.5rem;
       letter-spacing: 2px;
       color: var(--blue);
     }
-    section { margin-bottom: 40px; }
+
+    section {
+      margin-bottom: 40px;
+    }
+
     h2 {
       font-size: 2rem;
       color: var(--blue);
@@ -53,15 +71,24 @@
       padding-bottom: 8px;
       margin-bottom: 20px;
     }
+
     h3 {
       font-size: 1.5rem;
       color: var(--blue);
       margin-top: 30px;
       margin-bottom: 15px;
     }
-    p, li { font-size: 1.1rem; margin-bottom: 15px; }
-    ul { padding-left: 20px; }
-    a.btn-download {
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn-download {
       display: inline-block;
       background: var(--blue2);
       color: #fff;
@@ -69,74 +96,91 @@
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,123,255,0.3);
-      transition: background .3s, box-shadow .3s;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+      transition: background 0.3s, box-shadow 0.3s;
     }
-    a.btn-download:hover {
+
+    .btn-download:hover {
       background: var(--blue-dark);
-      box-shadow: 0 6px 12px rgba(0,86,179,0.6);
+      box-shadow: 0 6px 12px rgba(0, 86, 179, 0.6);
     }
-    .contact-list { list-style: none; padding: 0; }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+
     .contact-list li {
-      display: flex; align-items: center;
+      display: flex;
+      align-items: center;
       margin-bottom: 12px;
     }
+
     .contact-list a {
       color: var(--blue);
       margin-left: 10px;
       text-decoration: none;
-      transition: color .3s;
+      transition: color 0.3s;
     }
-    .contact-list a:hover { color: #54a0ff; text-decoration: underline; }
+
+    .contact-list a:hover {
+      color: #54a0ff;
+      text-decoration: underline;
+    }
+
     .contact-icon {
-      width: 24px; height: 24px;
+      width: 24px;
+      height: 24px;
       flex-shrink: 0;
       fill: var(--blue);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p, li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img class="foto" src="lucas.jpg" alt="Foto do Lucas Rocha da Silva">
-      <h1>LUCAS ROCHA DA SILVA</h1>
+      <img class="foto" src="lucas.jpg" alt="Foto de Lucas Rocha da Silva" />
+      <h1>Lucas Rocha da Silva</h1>
     </header>
 
     <main>
       <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Sou <strong>Lucas Rocha</strong>, profissional focado em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em automação, governança em nuvem e migração de dados.</p>
-        <p>Atuo com <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI, Azure DevOps</strong>. Estruturo ambientes escaláveis e seguros, com foco em governança, versionamento e automação.</p>
-        <p>Tenho perfil prático e orientado a resultados, sempre em busca de integrações entre nuvem e dados que tragam eficiência operacional e escala.</p>
+        <p>Sou <strong>Lucas Rocha</strong>, profissional focado em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente atuo como Analista de Soluções de Dados na <strong>Radix</strong>, com experiência sólida em automação, governança em nuvem e migração de dados.</p>
+        <p>Trabalho com <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI, Azure DevOps</strong>. Estruturo ambientes escaláveis e seguros com foco em governança, versionamento e automação.</p>
+        <p>Tenho perfil prático e orientado a resultados, buscando integrar nuvem e dados para promover eficiência operacional e escalabilidade.</p>
       </section>
 
       <section id="experiencias">
         <h2>Experiências</h2>
         <ul>
-          <li>
-            <strong>Radix – Analista de Soluções de Dados</strong><br>
-            Automação de pipelines, governança cloud e otimização de custo.
-          </li>
-          <li>
-            <strong>Dhata4 – Engenharia de Dados e Projetos Cloud</strong><br>
-            Migração e automação para melhor governança e escalabilidade.
-          </li>
+          <li><strong>Radix – Analista de Soluções de Dados</strong><br>Automação de pipelines, governança cloud e otimização de custo.</li>
+          <li><strong>Dhata4 – Engenharia de Dados e Projetos Cloud</strong><br>Migração e automação para melhor governança e escalabilidade.</li>
         </ul>
 
         <h3>Projetos Destacados</h3>
         <ul>
-          <li>
-            <strong>União Brasileira de Compositores – Migração Abr/2025</strong><br>
-            Liderança na migração Oracle → PostgreSQL com AWS DMS, transformações via Python, padronização de schemas e foco em performance e governança.
-          </li>
-          <li>
-            <strong>Ipiranga – Automação CI/CD Dez/2024–Mar/2025</strong><br>
-            Pipelines CI/CD para Azure Automation, automação Power BI, backups via Runbooks e gestão FinOps & Service Principals.
-          </li>
-          <li>
-            <strong>Ipiranga – Governança Azure Mai/2023–Nov/2024</strong><br>
-            Estruturação de Data Lake, controle de acesso, automações Azure DevOps, Azure Bastion e tagging para análise de custos.
-          </li>
+          <li><strong>União Brasileira de Compositores – Migração Abr/2025</strong><br>Liderança na migração Oracle → PostgreSQL com AWS DMS, transformações em Python, padronização de schemas e foco em performance e governança.</li>
+          <li><strong>Ipiranga – Automação CI/CD Dez/2024–Mar/2025</strong><br>Pipelines CI/CD para Azure Automation, automação Power BI, backups via Runbooks e gestão FinOps & Service Principals.</li>
+          <li><strong>Ipiranga – Governança Azure Mai/2023–Nov/2024</strong><br>Estruturação de Data Lake, controle de acesso, automações Azure DevOps, Azure Bastion e tagging para análise de custos.</li>
         </ul>
       </section>
 
