@@ -6,166 +6,151 @@
   <title>Lucas Rocha - Portfólio</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #eee;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      background: #0f0f0f;
+      color: #c0c0c0;
+      margin: 0;
+      padding: 0 20px;
     }
     header {
       text-align: center;
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid #007BFF;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
+      padding: 30px 0;
+      border-bottom: 1px solid #222;
     }
     header h1 {
-      margin-top: 15px;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-      color: #0af;
+      font-weight: 700;
+      color: #39ff14; /* Verde neon */
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-weight: 300;
+      font-style: italic;
+      margin-top: 5px;
+      color: #69ff94;
     }
     section {
-      margin-bottom: 40px;
+      max-width: 900px;
+      margin: 40px auto;
     }
     h2 {
-      border-bottom: 3px solid #0af;
-      padding-bottom: 8px;
+      border-bottom: 2px solid #39ff14;
+      padding-bottom: 5px;
       margin-bottom: 20px;
       font-weight: 600;
-      color: #0af;
+      color: #39ff14;
+      font-size: 2em;
     }
-    h3 {
-      color: #0af;
-      margin-top: 30px;
-      margin-bottom: 15px;
+    p, ul {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      color: #aaa;
     }
-    p, li {
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    a.btn-download {
-      display: inline-block;
-      background-color: #007BFF;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      margin-top: 15px;
-      transition: background-color 0.3s ease;
-    }
-    a.btn-download:hover {
-      background-color: #0056b3;
-    }
-    .contact-list {
+    ul.skills-list, ul.contact-list {
       list-style: none;
       padding: 0;
     }
-    .contact-list li {
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      font-size: 1.1rem;
+    ul.skills-list li {
+      padding: 5px 0;
+      border-bottom: 1px solid #222;
     }
-    .contact-list a {
-      color: #0af;
-      text-decoration: none;
-      margin-left: 10px;
-      transition: color 0.3s ease;
-    }
-    .contact-list a:hover {
-      text-decoration: underline;
-      color: #54a0ff;
-    }
+    /* Ícones contatos */
     .contact-icon-img {
       width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-      object-fit: contain;
-      filter: brightness(0) invert(1); /* deixa branco para contrastar no fundo escuro */
+      vertical-align: middle;
+      margin-right: 8px;
+      filter: brightness(1.5);
+    }
+    ul.contact-list li {
+      margin-bottom: 15px;
+    }
+    a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Botão de download */
+    .btn-download {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      font-weight: 700;
+      color: #0f0f0f;
+      background: #39ff14;
+      border-radius: 6px;
+      border: 2px solid #39ff14;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn-download:hover {
+      background: transparent;
+      color: #39ff14;
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <header>
-      <img src="lucas.jpg" alt="Foto de Lucas Rocha" />
-      <h1>LUCAS ROCHA DA SILVA</h1>
-    </header>
+<header>
+  <h1>Lucas Rocha da Silva</h1>
+  <p>DevOps Junior | Especialista em Azure, Python e Databricks</p>
+</header>
 
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em automação de infraestrutura, governança de ambientes cloud e migração de dados.</p>
-      <p>Atuo com tecnologias como <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e ferramentas de CI/CD com Azure DevOps</strong>. Tenho como diferencial a habilidade de estruturar ambientes escaláveis e seguros para engenharia de dados, com atenção especial à governança, versionamento de código e controle de acessos.</p>
-      <p>Tenho uma abordagem prática, orientada a resultados e inovação contínua. Estou sempre em busca de desafios que envolvam integração entre nuvem e dados, e que tragam impacto real em escalabilidade e eficiência operacional.</p>
-    </section>
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>Tenho 1 ano de experiência como DevOps Junior na Ipiranga, atuando com Azure, Databricks, Python e automações diversas. Também sou estudante de Análise e Desenvolvimento de Sistemas, buscando sempre aprendizado e evolução na área de tecnologia.</p>
+</section>
 
-    <section id="experiencias">
-      <h2>Experiências</h2>
-      <ul>
-        <li>
-          <strong>Radix – Analista de Soluções de Dados</strong><br>
-          Trabalho focado em automação de pipelines de dados, governança em ambientes cloud e otimização de custos.
-        </li>
-        <li>
-          <strong>Dhata4 – Engenharia de Dados e Projetos Cloud</strong><br>
-          Envolvimento em projetos de migração e automação para melhorar a governança e a escalabilidade dos dados.
-        </li>
-      </ul>
+<section id="skills">
+  <h2>Skills Técnicas</h2>
+  <ul class="skills-list">
+    <li>Azure (Functions, Logic Apps, Storage, Key Vault)</li>
+    <li>Databricks e Spark</li>
+    <li>Python para automação e análise de dados</li>
+    <li>PowerShell e scripts para administração</li>
+    <li>Conhecimento básico em DevOps e infraestrutura</li>
+  </ul>
+</section>
 
-      <h3>Projetos Destacados</h3>
-      <ul>
-        <li>
-          <strong>União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br>
-          Liderança na migração automatizada de dados Oracle para PostgreSQL com AWS DMS, incluindo transformação de dados com Python, padronização de schemas, e foco em performance e governança.
-        </li>
-        <li>
-          <strong>Ipiranga – Automação de CI/CD e Governança (Dez 2024 – Mar 2025)</strong><br>
-          Estruturação de pipelines CI/CD para Azure Automation Accounts, automações em Power BI com Microsoft Fabric, backups automatizados via Runbooks e controle rigoroso de custos e permissões (FinOps + Service Principals).
-        </li>
-        <li>
-          <strong>Ipiranga – Governança e Otimização de Ambientes de Dados (Mai 2023 – Nov 2024)</strong><br>
-          Atuação em governança de ambientes Azure, com foco em organização do Data Lake, controle de acessos, automações com Azure DevOps, uso de Azure Bastion e aplicação de tags para análise de custos por projeto.
-        </li>
-      </ul>
-    </section>
+<section id="experiencia">
+  <h2>Experiência Profissional</h2>
+  <ul>
+    <li><strong>DevOps Junior - Ipiranga (2023 - Atual)</strong><br />
+      Atuação com Azure, Databricks, automações, gerenciamento de pipelines e monitoramento.
+    </li>
+    <li><strong>Estágio - Estrutura Metálica no Senai (2022)</strong><br />
+      Experiência prática em processos industriais e trabalho em equipe.</li>
+    <li><strong>Operador de Caixa - Marisa (2019-2021)</strong><br />
+      Atendimento ao cliente, organização e controle de caixa.</li>
+  </ul>
+</section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <ul class="contact-list">
-        <li>
-          <img src="hotmail.jpg" alt="Ícone Email" class="contact-icon-img" />
-          Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a>
-        </li>
-        <li>
-          <img src="whatsapp.jpg" alt="Ícone WhatsApp" class="contact-icon-img" />
-          WhatsApp: <a href="https://wa.me/5521982890537" target="_blank">(21) 98289-0537</a>
-        </li>
-        <li>
-          <img src="linkedin.jpg" alt="Ícone LinkedIn" class="contact-icon-img" />
-          LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">linkedin.com/in/lucas-rocha-31b4931a1</a>
-        </li>
-      </ul>
-    </section>
+<section id="contato">
+  <h2>Contato</h2>
+  <ul class="contact-list">
+    <li>
+      <img src="hotmail.jpg" alt="Ícone Email" class="contact-icon-img" />
+      Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a>
+    </li>
+    <li>
+      <img src="whatsapp.jpg" alt="Ícone WhatsApp" class="contact-icon-img" />
+      WhatsApp: <a href="https://wa.me/5521982890537" target="_blank">(21) 98289-0537</a>
+    </li>
+    <li>
+      <img src="linkedin.jpg" alt="Ícone LinkedIn" class="contact-icon-img" />
+      LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">linkedin.com/in/lucas-rocha-31b4931a1</a>
+    </li>
+  </ul>
 
-  </div>
+  <a href="cv-lucas-rocha.pdf" class="btn-download" download>Baixar Currículo</a>
+</section>
+
+<section id="Dhata4">
+  <h2>dhata4</h2>
+  <p>Conteúdo sobre dhata4 ajustado conforme solicitado.</p>
+</section>
+
 </body>
 </html>
