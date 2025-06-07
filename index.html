@@ -1,197 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lucas Rocha - Portfólio</title>
   <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #121212;
       color: #eee;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
     }
-
     .container {
       max-width: 900px;
-      width: 100%;
+      margin: auto;
       padding: 20px;
-      background: #1e1e1e;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
     }
-
-    /* Foto e nome centralizados */
-    .profile {
+    header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
-
-    .profile img {
+    header img {
       width: 160px;
       height: 160px;
-      object-fit: cover;
       border-radius: 50%;
       border: 3px solid #007BFF;
-      box-shadow: 0 0 10px #007BFF;
-      margin-bottom: 15px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
     }
-
-    .profile h1 {
-      font-size: 2.2rem;
+    header h1 {
+      margin-top: 15px;
+      font-size: 2.5rem;
       letter-spacing: 2px;
-      color: #00aaff;
-      font-weight: 700;
-      text-transform: uppercase;
-      user-select: none;
+      color: #0af;
     }
-
-    /* Seções */
     section {
       margin-bottom: 40px;
     }
-
-    .section-heading h2 {
-      color: #00aaff;
-      border-bottom: 3px solid #00aaff;
-      padding-bottom: 6px;
+    h2 {
+      border-bottom: 3px solid #0af;
+      padding-bottom: 8px;
       margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 1.8rem;
-      user-select: none;
-    }
-
-    p {
-      margin-bottom: 15px;
-      font-size: 1.05rem;
-      color: #ccc;
-    }
-
-    strong {
-      color: #fff;
-    }
-
-    /* Projetos destacados */
-    .project {
-      background: #292929;
-      padding: 15px 20px;
-      margin-bottom: 15px;
-      border-left: 5px solid #007BFF;
-      border-radius: 5px;
-    }
-
-    /* Contatos */
-    .contact-info p {
-      font-size: 1.1rem;
-      margin-bottom: 12px;
-      color: #ddd;
-    }
-
-    .contact-info a {
-      color: #00aaff;
-      text-decoration: none;
       font-weight: 600;
+      color: #0af;
     }
-    .contact-info a:hover {
-      text-decoration: underline;
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
     }
-
-    /* Botão download */
-    .btn-download {
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    a.btn-download {
       display: inline-block;
-      padding: 12px 25px;
       background-color: #007BFF;
       color: white;
+      padding: 12px 25px;
       border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 700;
+      margin-top: 15px;
       transition: background-color 0.3s ease;
-      user-select: none;
     }
-    .btn-download:hover {
-      background-color: #005bb5;
+    a.btn-download:hover {
+      background-color: #0056b3;
+    }
+    .contact-list a {
+      color: #0af;
+      text-decoration: none;
+    }
+    .contact-list a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Foto e Nome -->
-    <div class="profile">
-      <img src="lucas.jpg" alt="Lucas Rocha" />
+
+    <header>
+      <img src="lucas.jpg" alt="Foto de Lucas Rocha" />
       <h1>LUCAS ROCHA DA SILVA</h1>
-    </div>
+    </header>
 
-    <!-- Sobre Mim -->
     <section id="sobre">
-      <div class="section-heading">
-        <h2>Sobre Mim</h2>
-      </div>
-      <p>
-        Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em <strong>automação de infraestrutura, governança de ambientes cloud e migração de dados</strong>.
-      </p>
-      <p>
-        Atuo com tecnologias como <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e ferramentas de CI/CD com Azure DevOps</strong>. Tenho como diferencial a habilidade de estruturar ambientes escaláveis e seguros para engenharia de dados, com atenção especial à governança, versionamento de código e controle de acessos.
-      </p>
+      <h2>Sobre Mim</h2>
+      <p>Sou <strong>Lucas Rocha</strong>, profissional de tecnologia com foco em <strong>Cloud, DevOps e Engenharia de Dados</strong>. Atualmente trabalho como Analista de Soluções de Dados na <strong>Radix</strong>, com sólida experiência em automação de infraestrutura, governança de ambientes cloud e migração de dados.</p>
+      <p>Atuo com tecnologias como <strong>Azure, AWS, Python, PowerShell, Databricks, Power BI e ferramentas de CI/CD com Azure DevOps</strong>. Tenho como diferencial a habilidade de estruturar ambientes escaláveis e seguros para engenharia de dados, com atenção especial à governança, versionamento de código e controle de acessos.</p>
+      <p>Tenho uma abordagem prática, orientada a resultados e inovação contínua. Estou sempre em busca de desafios que envolvam integração entre nuvem e dados, e que tragam impacto real em escalabilidade e eficiência operacional.</p>
     </section>
 
-    <!-- Experiências -->
     <section id="experiencias">
-      <div class="section-heading">
-        <h2>Experiências</h2>
-      </div>
+      <h2>Experiências</h2>
+      <ul>
+        <li>
+          <strong>Radix – Analista de Soluções de Dados</strong><br>
+          Trabalho focado em automação de pipelines de dados, governança em ambientes cloud e otimização de custos.
+        </li>
+        <li>
+          <strong>Data4 – Engenharia de Dados e Projetos Cloud</strong><br>
+          Envolvimento em projetos de migração e automação para melhorar a governança e a escalabilidade dos dados.
+        </li>
+      </ul>
 
-      <div class="project">
-        <strong>🔹 Radix – Analista de Soluções de Dados</strong><br />
-        Atuação focada em <strong>engenharia de dados, automação e governança</strong> para ambientes cloud, especialmente em projetos de migração e otimização de pipelines.
-      </div>
-
-      <div class="project">
-        <strong>🔹 Dhata4 – Projetos de Engenharia de Dados</strong><br />
-        Implementação de soluções em <strong>AWS e Azure</strong>, com destaque para migração automatizada de dados e integração entre plataformas, usando Python, AWS DMS e Azure DevOps.
-      </div>
-
-      <!-- Projetos destacados -->
-      <div class="project">
-        <strong>🔹 União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br />
-        Liderança na <strong>migração automatizada de dados Oracle para PostgreSQL</strong> com <strong>AWS DMS</strong>, incluindo transformação de dados com Python, padronização de schemas, e foco em performance e governança.
-      </div>
-
-      <div class="project">
-        <strong>🔹 Ipiranga – Automação de CI/CD e Governança em Ambientes de Engenharia de Dados e BI (Dez 2024 – Mar 2025)</strong><br />
-        Estruturação de <strong>pipelines CI/CD para Azure Automation Accounts</strong>, automações em <strong>Power BI com Microsoft Fabric</strong>, backups automatizados via Runbooks e controle rigoroso de custos e permissões (FinOps + Service Principals).
-      </div>
-
-      <div class="project">
-        <strong>🔹 Ipiranga – Governança e Otimização de Ambientes de Dados e Desenvolvimento (Mai 2023 – Nov 2024)</strong><br />
-        Atuação em <strong>governança de ambientes Azure</strong>, com foco em organização do Data Lake, controle de acessos, automações com Azure DevOps, utilização de Azure Bastion e aplicação de tags para análise de custos por projeto.
-      </div>
+      <h3>Projetos Destacados</h3>
+      <ul>
+        <li>
+          <strong>União Brasileira de Compositores – Migração de Dados e Infraestrutura (Abr 2025)</strong><br>
+          Liderança na migração automatizada de dados Oracle para PostgreSQL com AWS DMS, incluindo transformação de dados com Python, padronização de schemas, e foco em performance e governança.
+        </li>
+        <li>
+          <strong>Ipiranga – Automação de CI/CD e Governança (Dez 2024 – Mar 2025)</strong><br>
+          Estruturação de pipelines CI/CD para Azure Automation Accounts, automações em Power BI com Microsoft Fabric, backups automatizados via Runbooks e controle rigoroso de custos e permissões (FinOps + Service Principals).
+        </li>
+        <li>
+          <strong>Ipiranga – Governança e Otimização de Ambientes de Dados (Mai 2023 – Nov 2024)</strong><br>
+          Atuação em governança de ambientes Azure, com foco em organização do Data Lake, controle de acessos, automações com Azure DevOps, uso de Azure Bastion e aplicação de tags para análise de custos por projeto.
+        </li>
+      </ul>
     </section>
 
-    <!-- Contatos -->
     <section id="contato">
-      <div class="section-heading">
-        <h2>Contato</h2>
-      </div>
-      <div class="contact-info">
-        <p>📩 E-mail: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a></p>
-        <p>📞 WhatsApp: <a href="https://wa.me/5521982890537" target="_blank" rel="noopener noreferrer">(21) 98289-0537</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank" rel="noopener noreferrer">linkedin.com/in/lucas-rocha-31b4931a1/</a></p>
-      </div>
-      <div style="margin-top: 25px;">
-        <a href="cv-lucas-rocha.pdf" download class="btn-download">📄 Baixar Currículo em PDF</a>
-      </div>
+      <h2>Contato</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:lc.rochaaa@hotmail.com">lc.rochaaa@hotmail.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/5521982890537" target="_blank">(21) 98289-0537</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/lucas-rocha-31b4931a1/" target="_blank">linkedin.com/in/lucas-rocha-31b4931a1/</a></li>
+      </ul>
+      <a href="cv-lucas-rocha.pdf" download class="btn-download">📄 Baixar Currículo em PDF</a>
     </section>
+
   </div>
 </body>
 </html>
